@@ -4,7 +4,7 @@ from tensorflow import keras
 from keras.preprocessing import image
 from img_classification import teachable_machine_classification
 
-st.title("Image Classification with Google's Teachable Machine")
+st.title("Image Classification with Teachable Machine")
 st.header("Malaysian Banknote Classification")
 st.text("Upload a banknote for image classification to identify what banknote it is")
 
