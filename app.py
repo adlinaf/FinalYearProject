@@ -6,6 +6,10 @@ from img_classification import teachable_machine_classification
 
 st.title("Image Classification with Teachable Machine")
 st.header("Malaysian Banknote Classification")
+st.header("Project's Objectives:")
+st.header("1. To investigate Malaysian banknotes differences and features.")
+st.header("1. To investigate Malaysian banknotes differences and features.")
+
 st.text("Upload a banknote for image classification to identify what banknote it is")
 
 uploaded_file = st.file_uploader("Upload a banknote image...", type="jpg")
