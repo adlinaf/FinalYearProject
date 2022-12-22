@@ -19,7 +19,7 @@ st.markdown(
    }
    </style>
    ”””,
-   unsafe_allow_html=True)
+   unsafe_allow_html=False)
 
 uploaded_file = st.file_uploader("Upload a banknote image...", type="jpg")
 if uploaded_file is not None:
