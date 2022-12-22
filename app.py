@@ -11,6 +11,15 @@ st.header("1. To investigate Malaysian banknotes differences and features.")
 st.header("1. To investigate Malaysian banknotes differences and features.")
 
 st.text("Upload a banknote for image classification to identify what banknote it is")
+st.markdown(
+   f”””
+   <style>
+   p {
+   background-image: url(‘sky.jpg’);
+   }
+   </style>
+   ”””,
+   unsafe_allow_html=True)
 
 uploaded_file = st.file_uploader("Upload a banknote image...", type="jpg")
 if uploaded_file is not None:
