@@ -81,5 +81,5 @@ if uploaded_file is not None:
     - Color: Red
     """
     )
-        else:
-            st.write("UNABLE TO CLASSIFY")
+    else:
+      st.write("UNABLE TO CLASSIFY")
