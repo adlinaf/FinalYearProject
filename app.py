@@ -41,45 +41,45 @@ if uploaded_file is not None:
     st.write("")
     st.write("Classifying...")
     label, accuracy = teachable_machine_classification(image, 'keras_model.h5')
-if accuracy > 0.9:
-    if label == 0:
-        st.subheader("BANKNOTE RM50")
-        st.write(f'(Accuracy: {accuracy:.2f})')
-        st.markdown(
-"""
-- Fourth Series of Banknotes
-- Currency: RM50
-- Material: Paper
-- Size (mm): 145 x 69
-- Date: 2012 – present
-- Color: Cyan
-"""
-)
-    elif label == 1:
-        st.subheader("BANKNOTE RM5")
-        st.write(f'(Accuracy: {accuracy:.2f})')
-        st.markdown(
-"""
-- Fourth Series of Banknotes
-- Currency: RM5
-- Material: Polymer
-- Size (mm): 135 x 65
-- Date: 2012 – present
-- Color: Green
-"""
-)
-    elif label == 2:
-        st.subheader("BANKNOTE RM10")
-        st.write(f'(Accuracy: {accuracy:.2f})')
-        st.markdown(
-"""
-- Fourth Series of Banknotes
-- Currency: RM10
-- Material: Paper
-- Size (mm): 140 x 65
-- Date: 2012 – present
-- Color: Red
-"""
-)
-    else:
-        st.write("UNABLE TO CLASSIFY")
+    if accuracy > 0.9:
+        if label == 0:
+            st.subheader("BANKNOTE RM50")
+            st.write(f'(Accuracy: {accuracy:.2f})')
+            st.markdown(
+    """
+    - Fourth Series of Banknotes
+    - Currency: RM50
+    - Material: Paper
+    - Size (mm): 145 x 69
+    - Date: 2012 – present
+    - Color: Cyan
+    """
+    )
+        elif label == 1:
+            st.subheader("BANKNOTE RM5")
+            st.write(f'(Accuracy: {accuracy:.2f})')
+            st.markdown(
+    """
+    - Fourth Series of Banknotes
+    - Currency: RM5
+    - Material: Polymer
+    - Size (mm): 135 x 65
+    - Date: 2012 – present
+    - Color: Green
+    """
+    )
+        elif label == 2:
+            st.subheader("BANKNOTE RM10")
+            st.write(f'(Accuracy: {accuracy:.2f})')
+            st.markdown(
+    """
+    - Fourth Series of Banknotes
+    - Currency: RM10
+    - Material: Paper
+    - Size (mm): 140 x 65
+    - Date: 2012 – present
+    - Color: Red
+    """
+    )
+        else:
+            st.write("UNABLE TO CLASSIFY")
