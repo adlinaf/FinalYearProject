@@ -40,9 +40,11 @@ if uploaded_file is not None:
     st.image(image, caption='Uploaded MRI.', use_column_width=True)
     st.write("")
     st.write("Classifying...")
-    label = teachable_machine_classification(image, 'keras_model.h5')
+    label, accuracy = teachable_machine_classification(image, 'keras_model.h5')
+if accuracy > 0.9:
     if label == 0:
         st.subheader("BANKNOTE RM50")
+        st.write(f'(Accuracy: {accuracy:.2f})')
         st.markdown(
 """
 - Fourth Series of Banknotes
@@ -55,6 +57,7 @@ if uploaded_file is not None:
 )
     elif label == 1:
         st.subheader("BANKNOTE RM5")
+        st.write(f'(Accuracy: {accuracy:.2f})')
         st.markdown(
 """
 - Fourth Series of Banknotes
@@ -67,6 +70,7 @@ if uploaded_file is not None:
 )
     elif label == 2:
         st.subheader("BANKNOTE RM10")
+        st.write(f'(Accuracy: {accuracy:.2f})')
         st.markdown(
 """
 - Fourth Series of Banknotes
