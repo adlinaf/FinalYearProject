@@ -28,6 +28,6 @@ def teachable_machine_classification(img, weights_file):
     prediction = model.predict(data)
 
       #calculate accuracy
-    accuracy = np.max(prediction)
+    #accuracy = np.max(prediction)
 
     return np.argmax(prediction), np.max(prediction) # return position of the highest probability
