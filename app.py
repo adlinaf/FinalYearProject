@@ -19,7 +19,7 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
-add_bg_from_local('new_wallpaper.png')    
+add_bg_from_local('test.png')    
 
 st.title("Image Classification with Teachable Machine")
 st.header("Malaysian Banknote Classification")
