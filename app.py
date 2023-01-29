@@ -49,6 +49,7 @@ if uploaded_file is not None:
     """
     - Fourth Series of Banknotes
     - Currency: RM50
+    - RM50 = $11.78
     - Material: Paper
     - Size (mm): 145 x 69s
     - Date: 2012 – present
