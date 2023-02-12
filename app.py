@@ -27,8 +27,8 @@ st.subheader("Project's Objectives")
 st.markdown(
 """
 - To investigate Malaysian banknotes differences and features.
-- To collect Malaysian banknotes images.
 - To build an image classification model using transfer learning.
+- To evaluate the accuracy of the classification model.
 - To develop a web application by incorporating image classification model that can successfully classify Malaysian banknotes.
 """
 )
