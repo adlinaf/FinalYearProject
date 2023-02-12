@@ -63,6 +63,7 @@ if uploaded_file is not None:
     """
     - Fourth Series of Banknotes
     - Currency: RM5
+    - RM5 = $1.15
     - Material: Polymer
     - Size (mm): 135 x 65
     - Date: 2012 – present
@@ -76,6 +77,7 @@ if uploaded_file is not None:
     """
     - Fourth Series of Banknotes
     - Currency: RM10
+    - RM10 = $2.31
     - Material: Paper
     - Size (mm): 140 x 65
     - Date: 2012 – present
