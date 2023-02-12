@@ -54,6 +54,9 @@ if uploaded_file is not None:
     - Size (mm): 145 x 69s
     - Date: 2012 – present
     - Color: Cyan
+    
+    Did you know..?
+    - RM50 represents oil palm trees as our country earned its status as the second-largest producer of sustainable palm oil. 
     """
     )
         elif label == 1:
@@ -68,6 +71,9 @@ if uploaded_file is not None:
     - Size (mm): 135 x 65
     - Date: 2012 – present
     - Color: Green
+    
+    Did you know..?
+    - RM5 represents the Sarawak's official magnificent bird, Rhinoceros Hornbill.
     """
     )
         elif label == 2:
@@ -82,6 +88,9 @@ if uploaded_file is not None:
     - Size (mm): 140 x 65
     - Date: 2012 – present
     - Color: Red
+    
+    Did you know..?
+    - RM10 represents the LARGEST flower in the whole world, Rafflesia.
     """
     )
     else:
